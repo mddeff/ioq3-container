@@ -15,7 +15,7 @@ pak0_setup () {
         ln -sf /data/pak0.pk3 /ioq3/baseq3/pak0.pk3
     elif [ -n "$PAK0_URL" ]; then
         echo "Downloading pak0.pk3 from $PAK0_URL"
-        wget $PAK0_URL -o /ioq3/baseq3/pak0.pk3
+        pushd /ioq3/baseq3/ && wget -nv $PAK0_URL pak0.pk3
     else
         echo "FATAL - Couldn't get pak0.pk3, check the the readme for more information https://github.com/mddeff/ioq3-container/readme.md#sourcing-quake-3-arena-pak0pk3"
         exit 255
@@ -53,7 +53,6 @@ start_server () {
     
 
 }
-
 
 # MAIN
 show_eula
