@@ -71,6 +71,11 @@ docker exec -it container_name_here /bin/bash
 tmux attach
 ```
 
+## Author
+Mike D
+- https://zeroent.net
+- https://schemesandnotions.io
+
 ## Legal
 This container image is distributed under GPLv2.0, the same as the original source code from [ioquake3](https://github.com/ioquake/ioq3).  The built container image also contains the Patch data from https://ioquake3.org/extras/patch-data/.  Utilizing this image, building it using the tooling in this repo, or pulling the image from any registry constitutes concurrence with the EULA found at https://ioquake3.org/extras/patch-data/ or [a copy of the EULA in this repo](./ID_EULA.txt)
 
