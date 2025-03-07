@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   ioq3-server:
     image: ghcr.io/mddeff/ioq3-container:main
@@ -8,6 +6,6 @@ services:
       - "27961:27961/udp"
     volumes:
       - ${HOME}/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Quake 3 Arena/baseq3/pak0.pk3:/data/pak0.pk3
-      - ./dev:/data/cfg
+      - ./cfg:/data/cfg
     environment:
       - EXTRA_ARGS=+set dedicated 1 +set sv_allowDownload 1 +set sv_dlURL \"\" +set com_hunkmegs 64 +set net_port 27961 +set sv_maxclients 16 +exec cfg/ctf4.cfg
