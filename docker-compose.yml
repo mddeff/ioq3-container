@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   ioq3-server:
-    image: ioq3-server
+    image: ghcr.io/mddeff/ioq3-container:main
     restart: unless-stopped
     ports:
       - "27961:27961/udp"

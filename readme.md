@@ -16,7 +16,7 @@ docker run -it --rm -p 27961:27961/udp \
   -v "${HOME}/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Quake 3 Arena/baseq3/pak0.pk3:/data/pak0.pk3" \
   -v "$(pwd)/cfg:/data/cfg" \
   -e EXTRA_ARGS="+set dedicated 1 +set com_hunkmegs 64 +set sv_maxclients 16 +set sv_maxclients 16" \
-  ioq3-server
+  ghcr.io/mddeff/ioq3-container:main
 ```
 
 Docker-compose example:

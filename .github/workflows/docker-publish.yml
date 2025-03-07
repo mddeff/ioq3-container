@@ -12,9 +12,18 @@ on:
     branches: [ "main" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
+    paths-ignore:
+      - '**.md'
+      - '**.txt'
+      - '**.cfg'
+      - 'docker-compose.yml'
   pull_request:
     branches: [ "main" ]
-
+    paths-ignore:
+      - '**.md'
+      - '**.txt'
+      - '**.cfg'
+      - 'docker-compose.yml'
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
