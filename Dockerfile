@@ -16,7 +16,6 @@ RUN rsync -av /quake_tmp/quake3-latest-pk3s/* /ioq3/.
 RUN rm -rf /quake_tmp /tmp/quake3-latest-pk3s.zip /build
 
 COPY start.sh /start.sh
-COPY base.cfg /ioq3/baseq3/base.cfg
 
 ENTRYPOINT [ "/start.sh" ]
 # /ioq3/ioq3ded.x86_64 +set dedicated 2 +set sv_allowDownload 1 +set sv_dlURL \"\" +set com_hunkmegs 64 +set gamemode ctf
