@@ -39,7 +39,7 @@ symlink_cfgs () {
 
 start_server () {
 
-    CMD="/ioq3/ioq3ded.x86_64 +logfile 3 ${EXTRA_ARGS:-+set dedicated 1 +set sv_allowDownload 1 +set sv_dlURL \"\" +set com_hunkmegs 64 +set net_port 27961}"
+    CMD="/ioq3/ioq3ded.x86_64 +logfile 3 ${EXTRA_ARGS:-+set dedicated 1 +set sv_allowDownload 1 +set sv_dlURL \"\" +set com_hunkmegs 64 +set net_port 27960 +set g_Gametype 4 +map q3ctf4 +set bot_minplayers 10}"
 
     # Execute the command
     echo "##########################################################################################################"

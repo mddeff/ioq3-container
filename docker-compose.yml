@@ -7,5 +7,5 @@ services:
     volumes:
       - ${HOME}/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Quake 3 Arena/baseq3/pak0.pk3:/data/pak0.pk3
       - ./cfg:/data/cfg
-    environment:
-      - EXTRA_ARGS=+set dedicated 1 +set sv_allowDownload 1 +set sv_dlURL \"\" +set com_hunkmegs 64 +set net_port 27961 +set sv_maxclients 16 +exec cfg/ctf4.cfg
+#    environment:
+#      - EXTRA_ARGS=+set dedicated 1 +set sv_allowDownload 1 +set sv_dlURL \"\" +set com_hunkmegs 64 +set net_port 27960 +set g_Gametype 4 +map q3ctf4 +set bot_minplayers 10
