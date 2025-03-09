@@ -1,7 +1,7 @@
 FROM quay.io/rockylinux/rockylinux:9-minimal
 
 
-RUN microdnf upgrade -y && microdnf install git gcc SDL2-devel wget zip rsync tmux -y
+RUN microdnf upgrade -y && microdnf install git gcc SDL2-devel wget zip rsync tmux procps-ng -y
 RUN mkdir /build
 RUN pushd /build && git clone https://github.com/ioquake/ioq3.git
 
